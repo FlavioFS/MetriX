@@ -1,0 +1,67 @@
+Exception Handling Metric Suite
+
+================================Coupling Metrics================================ 
+Raising Coupling (RCo)
+Description: The number of different exception types raised by all methods and 
+constructors of a given class.
+
+Signaling Coupling (SCo)
+Description: The number of different exception types signaled by all methods and 
+constructors of a given class.
+
+Handling Coupling (HCo)
+Description: The number of different exception types signaled by all methods and 
+constructors of a given class.
+================================================================================
+
+================================Size Metrics====================================
+Number of Raising (NoR)
+Description: The number of exception raised by a given class divided by a number
+of methods and constructors of this class.
+
+Number of Signaling (NoS)
+Description: The number of exception signaled by a given class divided by a number
+of methods and constructors of this class.
+
+Number of Handling (NoH)
+Description: The number of exception signaled by a given class divided by a number
+of methods and constructors of this class.
+
+Number of Empty Handlers (NoEH)
+Description: The number of empty handlers (i.e., catch blocs) in a given class.
+
+Number of General Handlers (NoGH)
+Description: The number of general handlers in a given class (i.e., the catch 
+blocks that catches java.lang.Exception or java.lang.Throwable).
+================================================================================
+
+================================Ratio Metrics===================================
+Ratio of Catch Block Lines of Code (RoCLoC)
+Description: The sum of all catch blocks lines of code of given class divided by
+the number of line of codes of this class. 
+
+Ratio of Try Block Lines of Code (RoTLoC)
+Description: The sum of all try blocks lines of code of given class divided by
+the number of line of codes of this class.
+
+Ratio of Finally Block Lines of Code (RoFLoC)
+Description: The sum of all finally blocks lines of code of given class divided 
+by the number of line of codes of this class.
+================================================================================
+
+================================Concern Metrics=================================
+Handling Density of Scattering (HDoS)
+Description: The density of scattering of handling code across methods of a given 
+class. This metric is calculated using a formula proposed by [1].
+================================================================================
+
+================================Usage Metrics===================================
+Exception Handling Mechanism Usage (EHMU)
+Description: This metric turns 1 if a given class uses an exception handling 
+construct or 0 otherwise.
+================================================================================
+
+
+[1] Marc Eaddy, Thomas Zimmermann, Kaitlin D. Sherwood, Vibhav Garg, Gail C. 
+Murphy, Nachiappan Nagappan, and Alfred V. Aho. 2008. Do Crosscutting Concerns 
+Cause Defects?. IEEE Trans. Softw. Eng. 34, 4 (July 2008), 497-515.
