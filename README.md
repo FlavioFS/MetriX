@@ -1,5 +1,5 @@
 <h1 align="center">
-<img align="center" src="img/metrix-logo.png">
+<img align="center" src="img/metrix-logo-2.png">
 <br>
 MetriX
 </h1>
