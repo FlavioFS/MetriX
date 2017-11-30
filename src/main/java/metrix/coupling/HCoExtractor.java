@@ -13,6 +13,12 @@ import model.Measure;
 import model.MeasureDataset;
 import model.MetricSuite;
 
+/**
+ * Handling Coupling: 
+ * The number of different exception types handled by all methods and constructors of a given class.  
+ * @author Flavio Freitas
+ *
+ */
 public class HCoExtractor extends VoidVisitorAdapter<JavaParserFacade> {
 
 	@Override

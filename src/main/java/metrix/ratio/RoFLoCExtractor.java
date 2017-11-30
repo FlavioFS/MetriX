@@ -12,6 +12,12 @@ import model.Measure;
 import model.MeasureDataset;
 import model.MetricSuite;
 
+/**
+ * Ratio of Finally Block Lines of Code: 
+ * The sum of all finally blocks lines of code of given class divided by the number of line of codes of this class.  
+ * @author Flavio Freitas
+ *
+ */
 public class RoFLoCExtractor extends VoidVisitorAdapter<JavaParserFacade> {
 
 	@Override

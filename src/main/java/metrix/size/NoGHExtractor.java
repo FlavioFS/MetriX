@@ -10,6 +10,12 @@ import model.Measure;
 import model.MeasureDataset;
 import model.MetricSuite;
 
+/**
+ * Number of General Handlers: 
+ * The number of general handlers in a given class (i.e., the catch blocks that catches java.lang.Exception or java.lang.Throwable).  
+ * @author Flavio Freitas
+ *
+ */
 public class NoGHExtractor extends VoidVisitorAdapter<JavaParserFacade> {
 
 	@Override

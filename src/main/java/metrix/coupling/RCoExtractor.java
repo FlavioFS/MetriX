@@ -14,6 +14,12 @@ import model.Measure;
 import model.MeasureDataset;
 import model.MetricSuite;
 
+/**
+ * Raising Coupling: 
+ * The number of different exception types raised by all methods and constructors of a given class.  
+ * @author Flavio Freitas
+ *
+ */
 public class RCoExtractor extends VoidVisitorAdapter<JavaParserFacade> {
 
 	@Override

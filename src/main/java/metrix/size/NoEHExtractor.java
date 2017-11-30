@@ -9,6 +9,12 @@ import model.Measure;
 import model.MeasureDataset;
 import model.MetricSuite;
 
+/**
+ * Number of Empty Handlers: 
+ * The number of empty handlers (i.e., catch blocs) in a given class.  
+ * @author Flavio Freitas
+ *
+ */
 public class NoEHExtractor extends VoidVisitorAdapter<JavaParserFacade> {
 
 	@Override

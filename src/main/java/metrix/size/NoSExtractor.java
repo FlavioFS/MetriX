@@ -13,6 +13,12 @@ import model.Measure;
 import model.MeasureDataset;
 import model.MetricSuite;
 
+/**
+ * Number of Signaling: 
+ * The number of exception signaled by a given class divided by a number of methods and constructors of this class.  
+ * @author Flavio Freitas
+ *
+ */
 public class NoSExtractor extends VoidVisitorAdapter<JavaParserFacade> {
 
 	@Override

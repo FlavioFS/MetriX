@@ -14,6 +14,12 @@ import model.Measure;
 import model.MeasureDataset;
 import model.MetricSuite;
 
+/**
+ * Signaling Coupling: 
+ * The number of different exception types signaled by all methods and constructors of a given class.  
+ * @author Flavio Freitas
+ *
+ */
 public class SCoExtractor extends VoidVisitorAdapter<JavaParserFacade> {
 
 	@Override

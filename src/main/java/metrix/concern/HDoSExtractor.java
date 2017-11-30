@@ -14,6 +14,13 @@ import model.Measure;
 import model.MeasureDataset;
 import model.MetricSuite;
 
+/**
+ * Handling Density of Scattering: 
+ * The density of scattering of handling code across methods of a given class. 
+ * Formula reference: http://www.cs.columbia.edu/~eaddy/publications/tse.online.pdf  
+ * @author Flavio Freitas
+ *
+ */
 public class HDoSExtractor extends VoidVisitorAdapter<JavaParserFacade> {
 
 	@Override

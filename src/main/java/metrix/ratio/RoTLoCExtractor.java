@@ -12,6 +12,12 @@ import model.Measure;
 import model.MeasureDataset;
 import model.MetricSuite;
 
+/**
+ * Ratio of Try Block Lines of Code: 
+ * The sum of all try blocks lines of code of given class divided by the number of line of codes of this class.  
+ * @author Flavio Freitas
+ *
+ */
 public class RoTLoCExtractor extends VoidVisitorAdapter<JavaParserFacade> {
 
 	@Override

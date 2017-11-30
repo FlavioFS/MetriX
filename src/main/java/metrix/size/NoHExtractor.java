@@ -12,6 +12,12 @@ import model.Measure;
 import model.MeasureDataset;
 import model.MetricSuite;
 
+/**
+ * Number of Handling: 
+ * The number of exception handled by a given class divided by a number of methods and constructors of this class.  
+ * @author Flavio Freitas
+ *
+ */
 public class NoHExtractor extends VoidVisitorAdapter<JavaParserFacade> {
 
 	@Override

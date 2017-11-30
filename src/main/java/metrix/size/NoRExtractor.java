@@ -13,6 +13,12 @@ import model.Measure;
 import model.MeasureDataset;
 import model.MetricSuite;
 
+/**
+ * Number of Raising: 
+ * The number of exception raised by a given class divided by a number of methods and constructors of this class.  
+ * @author Flavio Freitas
+ *
+ */
 public class NoRExtractor extends VoidVisitorAdapter<JavaParserFacade> {
 
 	@Override

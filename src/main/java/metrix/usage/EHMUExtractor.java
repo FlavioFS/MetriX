@@ -13,6 +13,12 @@ import model.Measure;
 import model.MeasureDataset;
 import model.MetricSuite;
 
+/**
+ * Exception Handling Mechanism Usage: 
+ * This metric turns 1 if a given class uses an exception handling construct or 0 otherwise.  
+ * @author Flavio Freitas
+ *
+ */
 public class EHMUExtractor extends VoidVisitorAdapter<JavaParserFacade> {
 
 	@Override
