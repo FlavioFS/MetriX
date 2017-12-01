@@ -13,8 +13,7 @@ public class MainSample {
 
         try {
             MetricSuiteExtractor.extract(projecPath, outputFileName);
-        } catch (FileNotFoundException e)
-        {
+        } catch (FileNotFoundException e) {
             e.printStackTrace();
             System.err.println("Error - Project not found at project path:");
             System.err.println(projecPath);

@@ -33,8 +33,7 @@ public class MainSampleArgs {
     void tryExtract (String inputPathFolder, String outputPathCSV) {
         try {
             MetricSuiteExtractor.extract(inputPathFolder, outputPathCSV);
-        } catch (FileNotFoundException e)
-        {
+        } catch (FileNotFoundException e) {
             e.printStackTrace();
             System.err.println("Error - Project not found at project path:");
             System.err.println(inputPathFolder);
