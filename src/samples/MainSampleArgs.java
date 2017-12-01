@@ -8,17 +8,17 @@ package metrix;
 public class MainSampleArgs {
     
     public static void main(String[] args) {
-        
+
         if (args.length() > 3)
-            tryExtract(args[2], args[3]);
+        tryExtract(args[2], args[3]);
 
         else if ( args.length() == 3 && !args[1].Equals('MainSampleArgs') )
-            tryExtract(args[1], args[2]);
+        tryExtract(args[1], args[2]);
 
         else
-            printInstructions();
+        printInstructions();
 
-	}
+    }
 
     void printInstructions() {
         System.out.println("MainSampleArgs argument error! Correct usage:");
