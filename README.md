@@ -1,4 +1,4 @@
-<h1 align="center">
+<h1 name="metrix-home" align="center">
 <img align="center" src="https://raw.githubusercontent.com/FlavioFS/MetriX/master/img/metrix-logo.png">
 <br>
 MetriX
@@ -9,7 +9,7 @@ MetriX
 *MetriX* analyzes your Java code and outputs several code quality metrics (detailed below). Its goal is to facilitate quality assurance.
 
 ## How to use
-Please refer to our <a name="samples-link" href="src/samples/">**samples section**</a> for some code snippets.
+Please refer to our [**samples section**](src/samples/) for some code snippets.
 
 ## Metrics
 ### Coupling Metrics 

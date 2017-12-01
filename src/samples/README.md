@@ -20,7 +20,9 @@ public class MainSample {
 
 }
 ```
-<br>
+
+
+
 ### Adding console arguments
 The code below is found at [MainSampleArgs.java](MainSampleArgs.java).  
 ```java
@@ -57,4 +59,4 @@ public class MainSampleArgs {
 }
 ```
 
-<a name="samples-link" href="../../../../#samples-link">:back:</a>
+<a href="../../../../#metrix-home">:back:</a>
