@@ -30,15 +30,19 @@ import metrix.usage.EHMUExtractor;
 import model.MeasureDataset;
 import util.DirExplorer;
 
+/**
+ * Accounts for extraction of ALL metrics. 
+ * @author Flavio Freitas
+ *
+ */
 public class MetricSuiteExtractor {
-	public static void main(String[] args) throws FileNotFoundException {
-		String outputFileName = "<output-file-name>";
-		String projecPath = "<path>";
-		extract(projecPath);
-		MeasureDataset.generateCSVFile(outputFileName);
-	}
 
-	public static void extract(String projecPath) throws FileNotFoundException {
+	/**
+	 * Instantiates and invokes all metric classes in suite, then outputs results to a CSV file.
+	 * @param projectPath The path to all source files, including sub-directories.
+	 * @param outputFileName The CSV file to output calculated metrics.
+	 */
+	public static void extract(String projecPath, String outputFileName) throws FileNotFoundException {
 		File projectDir = new File(projecPath);
 		new DirExplorer((level, path, file) -> path.endsWith(".java"), (level, path, file) -> {
 			try {
@@ -66,5 +70,7 @@ public class MetricSuiteExtractor {
 				new RuntimeException(e);
 			}
 		}).explore(projectDir);
+
+		MeasureDataset.generateCSVFile(outputFileName);
 	}
 }

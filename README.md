@@ -5,6 +5,12 @@ MetriX
 </h1>
 <h3 align="center">:triangular_ruler: Exception Handling Metric Suite</h3>
 
+## Description
+*MetriX* analyzes your Java code and outputs several code quality metrics (detailed below). Its goal is to facilitate quality assurance.
+
+## How to use
+Please refer to our [**samples section**]("./samples") for some code snippets.
+
 ## Metrics
 ### Coupling Metrics 
 | Acronym  | Metric        | Description |
