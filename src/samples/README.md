@@ -17,11 +17,11 @@ public class MainSample {
             System.err.println(projecPath);
         }
     }
-    
+
 }
 ```
-
-### Adding console parameters
+<br>
+### Adding console arguments
 The code below is found at [MainSampleArgs.java](MainSampleArgs.java).  
 ```java
 public class MainSampleArgs {
@@ -44,11 +44,6 @@ public class MainSampleArgs {
         System.out.println("$ java MainSampleArgs <inputPathFolder> <outputPathCSV>");
     }
 
-    /**
-     * A "façade" that invokes MetriX and treats its exception (FileNotFoundException).
-     * @param inputPathFolder The project path (required by MetricSuiteExtractor).
-	 * @param outputPathCSV The CSV file to output calculated metrics (required by MetricSuiteExtractor).
-     */
     void tryExtract (String inputPathFolder, String outputPathCSV) {
         try {
             MetricSuiteExtractor.extract(inputPathFolder, outputPathCSV);
@@ -62,4 +57,4 @@ public class MainSampleArgs {
 }
 ```
 
-[:back:](../../../../)
+<a name="samples-link" href="../../../../#samples-link">:back:</a>
