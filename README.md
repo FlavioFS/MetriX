@@ -10,8 +10,10 @@
 
 <h3 align="center">
 	<div style="display: inline-block">
-		<img src="img/TravisCI-Mascot-1.png">
-		<img src="https://travis-ci.org/FlavioFS/MetriX.svg?branch=master" alt="TravisCI Status">
+		<a href="https://travis-ci.org/FlavioFS/MetriX">
+			<img src="https://raw.githubusercontent.com/FlavioFS/MetriX/master/img/TravisCI-Mascot-1.png">
+			<img src="https://travis-ci.org/FlavioFS/MetriX.svg?branch=master" alt="TravisCI Status">
+		</a>
 	</div>
 </h3>
 
