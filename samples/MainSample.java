@@ -20,7 +20,7 @@ public class MainSample {
         	System.out.println("Running extractor...");
             
         	// Calls MetriX
-        	MetricSuiteExtractor.extract(projecPath, outputFileName); // This is the line!
+        	MetricSuiteExtractor.extract(projecPath, outputFileName);
         	
         } catch (FileNotFoundException e) {
             e.printStackTrace();
