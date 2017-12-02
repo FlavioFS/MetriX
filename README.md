@@ -4,9 +4,11 @@
 	MetriX
 </h1>
 
-<h2 align="center">
+<h3 align="center">
 	Exception Handling Metric Suite
-</h2>
+</h3>
+
+---
 
 <h3 align="center">
 	<div style="display: inline-block">
