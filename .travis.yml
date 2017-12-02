@@ -9,4 +9,5 @@ addons:
       - oracle-java8-installer
 
 sudo: false
+install: mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V -source 8
 script: mvn test

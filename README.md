@@ -1,9 +1,17 @@
 <h1 name="metrix-home" align="center">
-<img align="center" src="https://raw.githubusercontent.com/FlavioFS/MetriX/master/img/metrix-logo.png">
-<br>
-MetriX
+	<img align="center" src="https://raw.githubusercontent.com/FlavioFS/MetriX/master/img/metrix-logo.png">
+	<br>
+	MetriX
 </h1>
-<h3 align="center">Exception Handling Metric Suite</h3>
+
+<h2 align="center">
+	Exception Handling Metric Suite
+</h2>
+
+<h3 align="center">
+	![TravisCI Status](https://travis-ci.org/FlavioFS/MetriX.svg?branch=master)
+</h3>
+
 
 ## :page_with_curl: Description
 *MetriX* analyzes your Java code and outputs several code quality metrics (detailed below). Its goal is to facilitate quality assurance.
