@@ -12,13 +12,13 @@ public class MainSampleArgs {
     public static void main(String[] args) {
 
         if (args.length > 3)
-        tryExtract(args[2], args[3]);
+        	tryExtract(args[2], args[3]);
 
         else if ( args.length == 3 && !args[1].equals("MainSampleArgs") )
-        tryExtract(args[1], args[2]);
+        	tryExtract(args[1], args[2]);
 
         else
-        printInstructions();
+        	printInstructions();
 
     }
 

@@ -4,25 +4,28 @@
 The code below is found at [MainSample.java](MainSample.java).  
 ```java
 public static void main(String[] args) {
-	System.err.println("Starting Metrix MainSample...");
+
+	System.out.println("Starting Metrix MainSample...");
+	
 	String projecPath = "./samples/HelloMetrix";
 	String outputFileName = "./HelloMetrix";
-	
+
 	try {
-		System.err.println("Running extractor...");
+		System.out.println("Running extractor...");
 		MetricSuiteExtractor.extract(projecPath, outputFileName);
 	} catch (FileNotFoundException e) {
 		e.printStackTrace();
 		System.err.println("Error - Project not found at given path:");
 		System.err.println(projecPath);
 	}
+
+	System.out.println("Done...");
 	
-	System.err.println("Done...");
 }
 ```
 
 ### Results
-The script above produce the following results at the [<root>/data](../../../../data/) folder:  
+The script above produces outputs the csv seen below to the [*root*/data](https://github.com/FlavioFS/MetriX/tree/master/data) folder:  
 
 | Property  | Value |
 | :------: | :-----------: |
