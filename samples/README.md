@@ -49,4 +49,4 @@ The script above outputs to the [*root*/data](https://github.com/FlavioFS/MetriX
 | EHMU | 1.0 |
 
 
-<a href="https://github.com/FlavioFS/MetriX/#metrix-home">:back:</a>
+<h3 align="center"><a href="https://github.com/FlavioFS/MetriX/#metrix-home">:back:</a></div>
