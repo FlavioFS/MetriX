@@ -1,6 +1,6 @@
 <h1 name="metrix-samples">:book: Samples</h1>
 
-### Invoking MetriX
+### :crystal_ball: Invoking MetriX
 The code below is found at [MainSample.java](MainSample.java).  
 ```java
 public static void main(String[] args) {
@@ -24,7 +24,7 @@ public static void main(String[] args) {
 }
 ```
 
-### Results
+### :bar_chart: Results
 The script above outputs to the [*root*/data](https://github.com/FlavioFS/MetriX/tree/master/data) folder the *.csv file* represented by the table below :
 
 
