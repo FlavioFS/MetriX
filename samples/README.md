@@ -1,4 +1,4 @@
-<h1 name="top">Samples</h1>
+<h1 name="metrix-samples">Samples</h1>
 
 ### Invoking MetriX
 The code below is found at [MainSample.java](MainSample.java).  

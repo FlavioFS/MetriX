@@ -9,7 +9,7 @@ MetriX
 *MetriX* analyzes your Java code and outputs several code quality metrics (detailed below). Its goal is to facilitate quality assurance.
 
 ## How to use
-Please refer to our [**samples section**](https://github.com/FlavioFS/MetriX/tree/master/samples#top) for some code snippets.
+Please refer to our [**samples section**](https://github.com/FlavioFS/MetriX/tree/master/samples#metrix-samples) for some code snippets.
 
 ## Metrics
 ### Coupling Metrics 
