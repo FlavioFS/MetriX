@@ -18,7 +18,10 @@ public class MainSample {
 
         try {
         	System.out.println("Running extractor...");
-            MetricSuiteExtractor.extract(projecPath, outputFileName);
+            
+        	// Calls MetriX
+        	MetricSuiteExtractor.extract(projecPath, outputFileName); // This is the line!
+        	
         } catch (FileNotFoundException e) {
             e.printStackTrace();
             System.err.println("Error - Project not found at given path:");

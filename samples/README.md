@@ -12,7 +12,10 @@ public static void main(String[] args) {
 
 	try {
 		System.out.println("Running extractor...");
+		
+		// Calls MetriX
 		MetricSuiteExtractor.extract(projecPath, outputFileName);
+		
 	} catch (FileNotFoundException e) {
 		e.printStackTrace();
 		System.err.println("Error - Project not found at given path:");
