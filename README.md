@@ -19,6 +19,7 @@
 	</div>
 </h3>
 
+---
 
 ## :page_with_curl: Description
 *MetriX* analyzes your Java code and outputs several code quality metrics (detailed below). Its goal is to facilitate quality assurance.
