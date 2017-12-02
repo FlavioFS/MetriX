@@ -25,7 +25,8 @@ public static void main(String[] args) {
 ```
 
 ### Results
-The script above produces outputs the csv seen below to the [*root*/data](https://github.com/FlavioFS/MetriX/tree/master/data) folder:  
+The script above outputs to the [*root*/data](https://github.com/FlavioFS/MetriX/tree/master/data) folder the *.csv file* represented by the table below :
+
 
 | Property  | Value |
 | :------: | :-----------: |
