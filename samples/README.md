@@ -1,4 +1,4 @@
-# Samples
+<h1 name="top">Samples</h1>
 
 ### Invoking MetriX
 The code below is found at [MainSample.java](MainSample.java).  
@@ -22,7 +22,8 @@ public static void main(String[] args) {
 ```
 
 ### Results
-The script above produce the following results at the [<root>/data](../../../../data/) folder:
+The script above produce the following results at the [<root>/data](../../../../data/) folder:  
+
 | Property  | Value |
 | :------: | :-----------: |
 | Classname | HelloMetrix::HelloMetrix |
@@ -77,4 +78,4 @@ public class MainSampleArgs {
 }
 ```
 
-<a href="../../../../#metrix-home">:back:</a>
+<a href="https://github.com/FlavioFS/MetriX/#metrix-home">:back:</a>
