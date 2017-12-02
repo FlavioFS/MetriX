@@ -1,4 +1,5 @@
-package metrix;
+package HelloMetrix;
+
 
 /**
  * A MetriX-style "Hello World" for documentation purposes.
@@ -8,9 +9,13 @@ package metrix;
 public class HelloMetrix {
     
     public static void main(String[] args) {
-        String projecPath = './HelloMetrix';
-        String outputFileName = './HelloMetrix.csv';
-        MetricSuiteExtractor.extract(projecPath, outputFileName);
+    	System.err.println("Hello Metrix!...");
+    	
+    	try {
+    		
+    	} catch (Exception e) {
+    		
+    	}
 	}
 
 }
