@@ -3,15 +3,15 @@
 <br>
 MetriX
 </h1>
-<h3 align="center">:triangular_ruler: Exception Handling Metric Suite</h3>
+<h3 align="center">Exception Handling Metric Suite</h3>
 
-## Description
+## :page_with_curl: Description
 *MetriX* analyzes your Java code and outputs several code quality metrics (detailed below). Its goal is to facilitate quality assurance.
 
-## How to use
-Please refer to our [**samples section**](https://github.com/FlavioFS/MetriX/tree/master/samples#metrix-samples) for some code snippets.
+## :books: How to use
+Please refer to our [**:book: samples section**](https://github.com/FlavioFS/MetriX/tree/master/samples#metrix-samples) for some code snippets.
 
-## Metrics
+## :triangular_ruler: Metrics
 ### Coupling Metrics 
 | Acronym  | Metric        | Description |
 | :------: | :-----------: | ----------- |
