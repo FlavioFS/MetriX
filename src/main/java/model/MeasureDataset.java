@@ -33,23 +33,20 @@ public class MeasureDataset {
 
 	public static String toCSV() {
 		StringBuffer buffer = new StringBuffer("classname");
+		
 		for (MeasureSuite suite : list()) {
-			for (Measure measure : suite.getMeasures()) {
-				buffer.append(",");
+			buffer.append(",");
+			buffer.append(suite.getClassName().replace(".", "::"));
+			
+			for (Measure measure : suite.getMeasures()) {				
+				buffer.append("\n");
 				buffer.append(measure.getMetric().getName());
+				buffer.append(",");
+				buffer.append(measure.getValue());
 			}
 			break;
 		}
 
-		for (MeasureSuite suite : list()) {
-			buffer.append("\n");
-			buffer.append(suite.getClassName().replace(".", "::"));
-
-			for (Measure measure : suite.getMeasures()) {
-				buffer.append(",");
-				buffer.append(measure.getValue());
-			}
-		}
 		return buffer.toString();
 	}
 
