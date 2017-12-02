@@ -9,7 +9,10 @@
 </h2>
 
 <h3 align="center">
-	![TravisCI Status](https://travis-ci.org/FlavioFS/MetriX.svg?branch=master)
+	<div>
+		<img src="https://travis-ci.org/FlavioFS/MetriX.svg?branch=master" alt="TravisCI Status">
+		<img src="img/TravisCI-Mascot-1.svg" style="width:25px;">
+	</div>
 </h3>
 
 
