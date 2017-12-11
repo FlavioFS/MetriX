@@ -2,14 +2,19 @@ package all;
 
 import junit.framework.Test;
 import junit.framework.TestSuite;
+import tests.concern.HDoSTest;
 import tests.coupling.HCoTest;
 import tests.coupling.RCoTest;
 import tests.coupling.SCoTest;
+import tests.ratio.RoCLoCTest;
+import tests.ratio.RoFLoCTest;
+import tests.ratio.RoTLoCTest;
 import tests.size.NoEHTest;
 import tests.size.NoGHTest;
 import tests.size.NoHTest;
 import tests.size.NoRTest;
 import tests.size.NoSTest;
+import tests.usage.EHMUTest;
 
 /**
  * Test suite that runs tests for all metrics. 
@@ -34,10 +39,15 @@ public class AllMetricsTest {
 		suite.addTestSuite(NoGHTest.class);
 		
 		// Usage
+		suite.addTestSuite(EHMUTest.class);
 		
 		// Ratio
+		suite.addTestSuite(RoCLoCTest.class);
+		suite.addTestSuite(RoTLoCTest.class);
+		suite.addTestSuite(RoFLoCTest.class);
 		
 		// Concern
+		suite.addTestSuite(HDoSTest.class);
 		
 		return suite;
 	}

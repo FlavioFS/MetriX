@@ -11,6 +11,11 @@ import util.DirExplorer;
 import util.JavaFilter;
 import util.SingleMetricFileHandler;
 
+/**
+ * Amount of exceptions thrown divided by amount of constructors and methods.
+ * @author Flavio Freitas
+ *
+ */
 public class NoRTest extends BaseTestManageFile {
 
 	File testFile;
@@ -46,7 +51,6 @@ public class NoRTest extends BaseTestManageFile {
 	}
 	
 	public void testNoR() {
-		
 		File projectDir = new File(testDirectoryPath);
 		
 		DirExplorer.Filter javaFilter = new JavaFilter();
@@ -54,7 +58,7 @@ public class NoRTest extends BaseTestManageFile {
 		
 		new DirExplorer(javaFilter, sourceFileHandler).explore(projectDir);		
 		
-		Assert.assertEquals(0.2, MeasureDataset.getMeasure("NoRTest", MetricSuite.NoR));
+		Assert.assertEquals(1.0/5, MeasureDataset.getMeasure("NoRTest", MetricSuite.NoR));
 	}
 	
 }

@@ -12,7 +12,7 @@ import util.JavaFilter;
 import util.SingleMetricFileHandler;
 
 /**
- * Number of Empty Handlers: catch blocks with no content inside.
+ * Amount of Empty Handlers: catch blocks with no content inside.
  * @author Flavio Freitas
  *
  */
@@ -50,7 +50,6 @@ public class NoEHTest extends BaseTestManageFile {
 	}
 	
 	public void testRCo() {
-		
 		File projectDir = new File(testDirectoryPath);
 		
 		DirExplorer.Filter javaFilter = new JavaFilter();

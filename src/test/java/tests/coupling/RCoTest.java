@@ -11,6 +11,11 @@ import util.DirExplorer;
 import util.JavaFilter;
 import util.SingleMetricFileHandler;
 
+/**
+ * Amount of different thrown exceptions.
+ * @author Flavio Freitas
+ *
+ */
 public class RCoTest extends BaseTestManageFile {
 
 	File testFile;
@@ -24,15 +29,19 @@ public class RCoTest extends BaseTestManageFile {
 		testFilePath = "RCoTest.java";
 		testFileContent =
 			"public class RCoTest {											\n" + 
-			"	public void triggerRCo1 () throws Exception {				\n" +
-			"		throw new Exception(\"RCo Triggered! (1)\");			\n" +
+			"	public void triggerRCo1_0 () {								\n" +
+			"		throw new Exception(\"RCo Triggered! (1.0)\");			\n" +
 			"	}															\n" +
 			"																\n" +
-			"	public void triggerRCo2 () throws IOException {				\n" +
+			"	public void triggerRCo1_1 () {								\n" +
+			"		throw new Exception(\"RCo Triggered! (1.1)\");			\n" +
+			"	}															\n" +
+			"																\n" +
+			"	public void triggerRCo2 () {								\n" +
 			"		throw new IOException(\"RCo Triggered! (2)\");			\n" +
 			"	}															\n" +
 			"																\n" +
-			"	public void triggerRCo3 () throws PrinterException {		\n" +
+			"	public void triggerRCo3 () {								\n" +
 			"		throw new PrinterException(\"RCo Triggered! (3)\");		\n" +
 			"	}															\n" +
 			"}																\n";
@@ -48,7 +57,6 @@ public class RCoTest extends BaseTestManageFile {
 	}
 	
 	public void testRCo() {
-		
 		File projectDir = new File(testDirectoryPath);
 		
 		DirExplorer.Filter javaFilter = new JavaFilter();

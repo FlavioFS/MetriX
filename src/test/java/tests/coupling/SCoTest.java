@@ -11,6 +11,11 @@ import util.DirExplorer;
 import util.JavaFilter;
 import util.SingleMetricFileHandler;
 
+/**
+ * Amount of different exceptions signaled by methods. 
+ * @author Flavio Freitas
+ *
+ */
 public class SCoTest extends BaseTestManageFile {
 
 	File testFile;
@@ -23,11 +28,12 @@ public class SCoTest extends BaseTestManageFile {
 		
 		testFilePath = "SCoTest.java";
 		testFileContent =
-			"public class SCoTest {										\n" + 
-			"	public void triggerSCo1 () throws Exception {}			\n" +
+			"public class SCoTest {										\n" +
+			"	public void triggerSCo1_0 () throws Exception {}		\n" +
+			"	public void triggerSCo1_1 () throws Exception {}		\n" +
 			"	public void triggerSCo2 () throws IOException {}		\n" +
 			"	public void triggerSCo3 () throws PrinterException {}	\n" +
-			"	public void triggerSCo3 () throws AWTException {}		\n" +
+			"	public void triggerSCo4 () throws AWTException {}		\n" +
 			"}															\n";
 		
 		super.setUp();
@@ -41,7 +47,6 @@ public class SCoTest extends BaseTestManageFile {
 	}
 	
 	public void testSCo() {
-		
 		File projectDir = new File(testDirectoryPath);
 		
 		DirExplorer.Filter javaFilter = new JavaFilter();

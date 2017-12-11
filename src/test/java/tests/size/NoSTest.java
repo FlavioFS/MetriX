@@ -11,6 +11,11 @@ import util.DirExplorer;
 import util.JavaFilter;
 import util.SingleMetricFileHandler;
 
+/**
+ * Amount of methods signaling exceptions divided by amount of methods and constructors.
+ * @author Flavio Freitas
+ *
+ */
 public class NoSTest extends BaseTestManageFile {
 
 	File testFile;
@@ -47,7 +52,6 @@ public class NoSTest extends BaseTestManageFile {
 	}
 	
 	public void testNoS() {
-		
 		File projectDir = new File(testDirectoryPath);
 		
 		DirExplorer.Filter javaFilter = new JavaFilter();
@@ -55,7 +59,7 @@ public class NoSTest extends BaseTestManageFile {
 		
 		new DirExplorer(javaFilter, sourceFileHandler).explore(projectDir);		
 		
-		Assert.assertEquals(0.5, MeasureDataset.getMeasure("NoSTest", MetricSuite.NoS));
+		Assert.assertEquals(4.0/8, MeasureDataset.getMeasure("NoSTest", MetricSuite.NoS));
 	}
 
 }

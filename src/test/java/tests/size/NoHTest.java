@@ -11,6 +11,11 @@ import util.DirExplorer;
 import util.JavaFilter;
 import util.SingleMetricFileHandler;
 
+/**
+ * Amount of catch blocks divided by amount of methods and constructors.
+ * @author Flavio Freitas
+ *
+ */
 public class NoHTest extends BaseTestManageFile {
 
 File testFile;
@@ -51,7 +56,6 @@ File testFile;
 	}
 	
 	public void testRCo() {
-		
 		File projectDir = new File(testDirectoryPath);
 		
 		DirExplorer.Filter javaFilter = new JavaFilter();
@@ -59,7 +63,7 @@ File testFile;
 		
 		new DirExplorer(javaFilter, sourceFileHandler).explore(projectDir);		
 		
-		Assert.assertEquals(0.25, MeasureDataset.getMeasure("NoHTest", MetricSuite.NoH));
+		Assert.assertEquals(2.0/8, MeasureDataset.getMeasure("NoHTest", MetricSuite.NoH));
 	}
 
 }

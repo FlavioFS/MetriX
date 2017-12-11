@@ -47,9 +47,9 @@ Please refer to our [**:book: samples section**](https://github.com/FlavioFS/Met
 ### Ratio Metrics
 | Acronym  | Metric        | Description |
 | :------: | :-----------: | ----------- |
-| RoCLoC | Ratio of Catch Block Lines of Code | The sum of all **catch** blocks lines of code of given class divided by the number of line of codes of this class. |
-| RoTLoC | Ratio of Try Block Lines of Code | The sum of all **try** blocks lines of code of given class divided by the number of line of codes of this class. |
-| RoFLoC | Ratio of Finally Block Lines of Code | The sum of all **finally** blocks lines of code of given class divided by the number of line of codes of this class. |
+| RoCLoC | Ratio of Catch Block Lines of Code | The sum of all **catch** block lines of code of given class divided by the number of line of codes of this class. |
+| RoTLoC | Ratio of Try Block Lines of Code | The sum of all **try** block lines of code of given class divided by the number of line of codes of this class. |
+| RoFLoC | Ratio of Finally Block Lines of Code | The sum of all **finally** block lines of code of given class divided by the number of line of codes of this class. |
 
 ### Concern Metrics
 | Acronym  | Metric        | Description |

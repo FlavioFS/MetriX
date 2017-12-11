@@ -12,7 +12,7 @@ import util.JavaFilter;
 import util.SingleMetricFileHandler;
 
 /**
- * Number of Generic Handlers. Accounts only for generic exceptions (precisely typeof Exception).
+ * Amount of Generic Handlers. Accounts only for generic exceptions (precisely typeof Exception).
  * @author Flavio Freitas
  *
  */
@@ -49,7 +49,6 @@ File testFile;
 	}
 	
 	public void testRCo() {
-		
 		File projectDir = new File(testDirectoryPath);
 		
 		DirExplorer.Filter javaFilter = new JavaFilter();
