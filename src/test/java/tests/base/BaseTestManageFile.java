@@ -1,4 +1,4 @@
-package extractor;
+package tests.base;
 
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;

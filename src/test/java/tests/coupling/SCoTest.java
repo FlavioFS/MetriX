@@ -1,4 +1,4 @@
-package extractor;
+package tests.coupling;
 
 import java.io.File;
 
@@ -6,6 +6,7 @@ import junit.framework.Assert;
 import metrix.coupling.SCoExtractor;
 import model.MeasureDataset;
 import model.MetricSuite;
+import tests.base.BaseTestManageFile;
 import util.DirExplorer;
 import util.JavaFilter;
 import util.SingleMetricFileHandler;
@@ -23,17 +24,10 @@ public class SCoTest extends BaseTestManageFile {
 		testFilePath = "SCoTest.java";
 		testFileContent =
 			"public class SCoTest {										\n" + 
-			"	public void triggerSCo1 () throws Exception {			\n" +
-			"	}														\n" +
-			"															\n" +
-			"	public void triggerSCo2 () throws IOException {			\n" +
-			"	}														\n" +
-			"															\n" +
-			"	public void triggerSCo3 () throws PrinterException {	\n" +
-			"	}														\n" +
-			"															\n" +
-			"	public void triggerSCo3 () throws AWTException {		\n" +
-			"	}														\n" +
+			"	public void triggerSCo1 () throws Exception {}			\n" +
+			"	public void triggerSCo2 () throws IOException {}		\n" +
+			"	public void triggerSCo3 () throws PrinterException {}	\n" +
+			"	public void triggerSCo3 () throws AWTException {}		\n" +
 			"}															\n";
 		
 		super.setUp();

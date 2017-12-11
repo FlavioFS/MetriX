@@ -1,5 +1,8 @@
 package HelloMetrix;
 
+import java.awt.print.PrinterException;
+import java.io.IOException;
+
 /**
  * Sample class to force occurrence of each metric.
  * @author Flavio Freitas
@@ -8,55 +11,45 @@ package HelloMetrix;
 public class ForceMetrics {
 	int fakeAttribute;
 	
-	public ForceMetrics (int fakeAttribute) {
-		this.fakeAttribute = fakeAttribute;
-	}
-	
-	public void coupling () {
+	/**
+	 * Forces Coupling metrics.
+	 * @throws IOException SCo++ (SCo == 1.0)
+	 * @throws PrinterException SCo++ (SCo == 2.0)
+	 * @throws Exception SCo++ (SCo == 3.0)
+	 */
+	public void coupling () throws IOException, PrinterException, Exception {
+		
+		// HCo++ (HCo == 1.0)
 		try {
+		} catch (NullPointerException e) {
 			
-		} catch (Exception e) {
+		} finally {
 			
 		}
 		
-		try {
-			
-		} catch (Exception e) {
-			
-		}
-		
+		// HCo++ (HCo == 2.0)
 		try {
 			fakeAttribute++;
 		} catch (Exception e) {
 			fakeAttribute--;
 		}
+		
+		// RCo++ (RCo == 1.0)
+		throw new IOException("");
 	}
 	
-	public void increment () {
-		fakeAttribute++;
-	}
+	/*
+	 * This section forces results for Size metrics to be different from results for Coupling metrics.
+	 */
+	public void sizeCount01 () { }
+	public void sizeCount02 () { }
+	public void sizeCount03 () { }
+	public void sizeCount04 () { }
+	public void sizeCount05 () { }
+	public void sizeCount06 () { }
+	public void sizeCount07 () { }
+	public void sizeCount08 () { }
+	public void sizeCount09 () { }
+	public void sizeCount10 () { }
 	
-	public void decrement () {
-		fakeAttribute--;
-		
-		
-		try {
-			
-		} catch (Exception e) {
-			
-		}
-		
-		try {
-			
-		} catch (Exception e) {
-			
-		}
-
-		try {
-			
-		} catch (Exception e) {
-			
-		}
-		
-	}
 }

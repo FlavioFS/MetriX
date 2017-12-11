@@ -1,4 +1,4 @@
-package extractor;
+package tests.coupling;
 
 import java.io.File;
 
@@ -6,6 +6,7 @@ import junit.framework.Assert;
 import metrix.coupling.HCoExtractor;
 import model.MeasureDataset;
 import model.MetricSuite;
+import tests.base.BaseTestManageFile;
 import util.DirExplorer;
 import util.JavaFilter;
 import util.SingleMetricFileHandler;
@@ -24,12 +25,9 @@ File testFile;
 		testFileContent =
 			"public class HCoTest {								\n" + 
 			"	public void triggerHCo () throws Exception {	\n" +
-			"		try {										\n" +
-			"		}											\n" +
-			"		catch (IOException e) {						\n" +
-			"		}											\n" +
-			"		catch (PrinterException e) {				\n" +
-			"		}											\n" +
+			"		try {}										\n" +
+			"		catch (IOException e) {}					\n" +
+			"		catch (PrinterException e) {}				\n" +
 			"	}												\n" + 
 			"}													\n";
 				

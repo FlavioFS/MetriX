@@ -1,4 +1,4 @@
-package extractor;
+package tests.coupling;
 
 import java.io.File;
 
@@ -6,6 +6,7 @@ import junit.framework.Assert;
 import metrix.coupling.RCoExtractor;
 import model.MeasureDataset;
 import model.MetricSuite;
+import tests.base.BaseTestManageFile;
 import util.DirExplorer;
 import util.JavaFilter;
 import util.SingleMetricFileHandler;
