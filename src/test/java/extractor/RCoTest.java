@@ -10,10 +10,13 @@ import util.DirExplorer;
 import util.JavaFilter;
 import util.SingleMetricFileHandler;
 
-public class RCoExtractorTest extends BaseTestManageFile {
+public class RCoTest extends BaseTestManageFile {
 
 	File testFile;
 	
+	/**
+	 * Creates test file.
+	 */
 	protected void setUp() {
 		testDirectoryPath = "./.tests/RCo/";
 		
@@ -28,14 +31,17 @@ public class RCoExtractorTest extends BaseTestManageFile {
 			"		throw new IOException(\"RCo Triggered! (2)\");			\n" +
 			"	}															\n" +
 			"																\n" +
-			"	public void triggerRCo3 () throws NullPointerException {	\n" +
-			"		throw new NullPointerException(\"RCo Triggered! (3)\");	\n" +
+			"	public void triggerRCo3 () throws PrinterException {		\n" +
+			"		throw new PrinterException(\"RCo Triggered! (3)\");		\n" +
 			"	}															\n" +
 			"}																\n";
 		
 		super.setUp();
 	}
 
+	/**
+	 * Clears stored measures.
+	 */
 	protected void tearDown() {
 		super.tearDown();
 	}

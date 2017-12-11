@@ -10,10 +10,13 @@ import util.DirExplorer;
 import util.JavaFilter;
 import util.SingleMetricFileHandler;
 
-public class HCoExtractorTest extends BaseTestManageFile {
+public class HCoTest extends BaseTestManageFile {
 
 File testFile;
 	
+	/**
+	 * Creates test file.
+	 */
 	protected void setUp() {
 		testDirectoryPath = "./.tests/HCo/";
 		
@@ -25,7 +28,7 @@ File testFile;
 			"		}											\n" +
 			"		catch (IOException e) {						\n" +
 			"		}											\n" +
-			"		catch (NullPointerException e) {			\n" +
+			"		catch (PrinterException e) {				\n" +
 			"		}											\n" +
 			"	}												\n" + 
 			"}													\n";
@@ -33,6 +36,9 @@ File testFile;
 		super.setUp();
 	}
 
+	/**
+	 * Clears stored measures.
+	 */
 	protected void tearDown() {
 		super.tearDown();
 	}

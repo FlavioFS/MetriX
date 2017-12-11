@@ -12,8 +12,9 @@ public class AllMetricsTest {
 
 	public static Test suite() {
 		TestSuite suite = new TestSuite(AllMetricsTest.class.getName());
-		suite.addTestSuite(HCoExtractorTest.class);
-		suite.addTestSuite(RCoExtractorTest.class);
+		suite.addTestSuite(RCoTest.class);
+		suite.addTestSuite(SCoTest.class);
+		suite.addTestSuite(HCoTest.class);
 		return suite;
 	}
 
