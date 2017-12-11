@@ -22,7 +22,7 @@ The script above outputs to the [*root*/data](https://github.com/FlavioFS/MetriX
 | Classname | RCo | HCo | SCo | NoR | NoH | NoS | NoGH | NoEH | RoTLoC | RoCLoC | RoFLoC | HDoS | EHMU |
 | :-------: | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: |
 | HelloMetrix::ForceMetrics | 1.0 | 2.0 | 3.0 | 0.1111 | 0.3333 | 0.3333 | 2.0 | 2.0 | 0.359 | 0.1282 | 0.1026 | 0.8 | 1.0 |
-| HelloMetrix::HelloMetrix  | 0.0 | 1.0 | 0.0 | 0.0 | 1.0 | 0.0 | 1.0 | 1.0 | 0.3333 | 0.1667 | 0.0 | 0.0,1.0 |
+| HelloMetrix::HelloMetrix  | 0.0 | 1.0 | 0.0 | 0.0 | 1.0 | 0.0 | 1.0 | 1.0 | 0.3333 | 0.1667 | 0.0 | 0.0 | 1.0 |
 
 
 <h3 align="center"><a href="https://github.com/FlavioFS/MetriX/#metrix-home">:back:</a></div>
