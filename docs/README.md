@@ -273,7 +273,7 @@ This metric is calculated using a formula proposed by <a href="#ref1">[1]</a>.
 ## <div name="usage">Usage Metrics</div>
 This class contains a metric that decides if the exception handling feature (try-catch-finally) was used or not.
 
-### <div name="rocloc">(EHMU) Exception Handling Mechanism Usage</div>
+### <div name="ehmu">(EHMU) Exception Handling Mechanism Usage</div>
 Outputs 1.0 if there are any exceptions in the class, 0.0 otherwise.
 ```java
 // EHMU == 0.0
