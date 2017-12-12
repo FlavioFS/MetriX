@@ -36,7 +36,7 @@ public class RaisingClass {
 	}
 
 	public void raisingMethod2 () {
-		throw new IOException("Raising!");			// 2
+		throw new IOException("Raising!");		// 2
 	}
 
 }
@@ -107,10 +107,10 @@ Number of Signaling counts signaled exceptions throughout the class and divides 
 public class SignalingClass {
 	
 	// 1 method
-	public SignalingClass () throws Exception {}	// 1 exception
+	public SignalingClass () throws Exception {}		// 1 exception
 
 	// 2 methods
-	public void signalingMethod () throws IOException {} // 2 exceptions
+	public void signalingMethod () throws IOException {}	// 2 exceptions
 
 	// 3 methods
 	public void nonSignalingMethod () {}
@@ -130,7 +130,7 @@ public class HandlingClass {
 		catch (Exception e) { }		// 1 exception
 
 		try { }
-		catch (Exception e) { }		// 2 exception
+		catch (Exception e) { }		// 2 exceptions
 	}
 
 }
@@ -195,18 +195,18 @@ public class CatchClass {
 	public void method () {
 		try { }
 		catch (IOException e) {
-		}							// (catch) 1
+		}				// (catch) 1
 
 		try { }
 		catch (Exception e) {
-									// (catch) 2
-		}							// (catch) 3
+						// (catch) 2
+		}				// (catch) 3
 
 		try { }
 		catch (Exception e) {
-									// (catch) 4
-									// (catch) 5
-		}							// (catch) 6
+						// (catch) 4
+						// (catch) 5
+		}				// (catch) 6
 	}
 
 }	// (class) 20
@@ -224,12 +224,12 @@ public class TryClass {
 		} catch (IOException e) {}	// (try) 1
 
 		try {
-									// (try) 2
-		}							// (try) 3
+						// (try) 2
+		}				// (try) 3
 		catch (Exception e) {		// (try) 4 <- does count
 		}
 
-		try { }						// Does not count (zero lines)
+		try { }				// Does not count (zero lines)
 		catch (Exception e) {}
 	}
 
@@ -247,18 +247,18 @@ public class TryClass {
 	public void method () {
 		try {}
 		catch (IOException e) {}
-		finally {}					// Does not count (zero lines)
+		finally {}			// Does not count (zero lines)
 
 		try { }
 		catch (Exception e) {
 		} finally {
-									// (finally) 1
-		}							// (finally) 2
+						// (finally) 1
+		}				// (finally) 2
 
 		try { }
 		catch (Exception e) {}
 		finally {
-		}							// (finally) 3
+		}				// (finally) 3
 	}
 
 }	// (class) 20
