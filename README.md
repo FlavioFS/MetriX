@@ -28,7 +28,7 @@
 Please refer to our [**:book: samples section**](https://github.com/FlavioFS/MetriX/tree/master/samples#metrix-samples) for some code snippets.
 
 ## :triangular_ruler: Metrics
-If the summary below is not enough, there is a detailed explanation in our [**:green_book: docs section**](https://github.com/FlavioFS/MetriX/tree/master/docs#metrix-docs)
+If the summary below is not enough, there is a detailed explanation in our [**:green_book: docs section**](https://github.com/FlavioFS/MetriX/tree/master/docs#metrix-docs).
 
 ### Coupling Metrics 
 | Acronym  | Metric        | Description |
