@@ -92,7 +92,7 @@ public class HandlingClass {
 
 
 ## <div name="size">Size Metrics</div>
-The metrics belonging to this group do not couple similar metrics and do account for each occurrence. Some results are absolute values and others are proportions.
+The metrics belonging to this group do not couple results in similar groups but do account for each occurrence. Some results are absolute values and others are proportions.
 
 ### <div name="nor">(NoR) Number of Raising</div>
 Number of Raising counts raised exceptions throughout the class and divides it by the amount of methods and constructors on it.
