@@ -66,7 +66,7 @@ public class SignalingClass {
 Handling Coupling counts handled exception types, that is, the amount of **catch** blocks. See the example below:
 ```java
 // HCo == 1.0
-public class SignalingClass {
+public class HandlingClass {
 
 	public void handlingMethod () {
 		try {
@@ -241,7 +241,7 @@ public class TryClass {
 The **finally** blocks length divided by the whole class length (mesured in lines of code).
 ```java
 // RoTLoC == 3/20 == 0.15
-public class TryClass {
+public class FinallyClass {
 	// (class) 1
 
 	public void method () {
