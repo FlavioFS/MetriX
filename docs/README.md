@@ -95,7 +95,7 @@ public class HandlingClass {
 The metrics belonging to this group do not couple results in similar groups but do account for each occurrence. Some results are absolute values and others are proportions.
 
 ### <div name="nor">(NoR) Number of Raising</div>
-Number of Raising counts raised exceptions throughout the class and divides it by the amount of methods and constructors on it.
+Number of Raising counts raised exceptions throughout the class and divides it by the amount of methods and constructors found in class.
 ```java
 // NoR == 1 exception / 2 functions == 1/2 == 0.5
 public class RaisingClass {
@@ -112,7 +112,7 @@ public class RaisingClass {
 ```
 
 ### <div name="nos">(NoS) Number of Signaling</div>
-Number of Signaling counts signaled exceptions throughout the class and divides it by the amount of methods and constructors on it.
+Number of Signaling counts signaled exceptions throughout the class and divides it by the amount of methods and constructors found in class.
 ```java
 // NoS == 2 exceptions / 3 functions == 2/3 = 0.6666
 public class SignalingClass {
@@ -130,7 +130,7 @@ public class SignalingClass {
 ```
 
 ### <div name="noh">(NoH) Number of Handling</div>
-Number of Handling counts handled exceptions (**catch** blocks) throughout the class and divides it by the amount of methods and constructors on it.
+Number of Handling counts handled exceptions (**catch** blocks) throughout the class and divides it by the amount of methods and constructors found in class.
 ```java
 // NoH == 2 exceptions / 1 function == 2/1 = 2.0
 public class HandlingClass {
