@@ -13,10 +13,8 @@ import util.SingleMetricFileHandler;
 
 public class EHMUTest extends BaseTestManageFile {
 
-	File testFile;
-	
 	/**
-	 * Creates test file.
+	 * Creates a test class for EHMU metric.
 	 */
 	protected void setUp() {
 		testDirectoryPath = "./.tests/EHMU/";
@@ -37,6 +35,7 @@ public class EHMUTest extends BaseTestManageFile {
 		super.setUp();
 	}
 
+	
 	/**
 	 * Clears stored measures.
 	 */
@@ -44,6 +43,9 @@ public class EHMUTest extends BaseTestManageFile {
 		super.tearDown();
 	}
 	
+	/**
+	 * Tests EHMU metric using its test file.
+	 */
 	public void testEHMU() {
 		File projectDir = new File(testDirectoryPath);
 		

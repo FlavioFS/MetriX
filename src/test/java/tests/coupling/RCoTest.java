@@ -18,10 +18,8 @@ import util.SingleMetricFileHandler;
  */
 public class RCoTest extends BaseTestManageFile {
 
-	File testFile;
-	
 	/**
-	 * Creates test file.
+	 * Creates a test class for RCo metric.
 	 */
 	protected void setUp() {
 		testDirectoryPath = "./.tests/RCo/";
@@ -56,6 +54,9 @@ public class RCoTest extends BaseTestManageFile {
 		super.tearDown();
 	}
 	
+	/**
+	 * Tests RCo metric using its test file.
+	 */
 	public void testRCo() {
 		File projectDir = new File(testDirectoryPath);
 		

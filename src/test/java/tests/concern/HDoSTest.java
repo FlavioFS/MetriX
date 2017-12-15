@@ -18,10 +18,8 @@ import util.SingleMetricFileHandler;
  */
 public class HDoSTest extends BaseTestManageFile {
 
-	File testFile;
-	
 	/**
-	 * Creates test file.
+	 * Creates a test class for HDoS metric.
 	 */
 	protected void setUp() {
 		testDirectoryPath = "./.tests/HDoS/";
@@ -59,6 +57,9 @@ public class HDoSTest extends BaseTestManageFile {
 		super.tearDown();
 	}
 	
+	/**
+	 * Tests HDoS metric using its test file.
+	 */
 	public void testHDoS() {
 		File projectDir = new File(testDirectoryPath);
 		

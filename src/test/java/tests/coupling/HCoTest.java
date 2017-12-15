@@ -18,10 +18,8 @@ import util.SingleMetricFileHandler;
  */
 public class HCoTest extends BaseTestManageFile {
 
-File testFile;
-	
 	/**
-	 * Creates test file.
+	 * Creates a test class for HCo metric.
 	 */
 	protected void setUp() {
 		testDirectoryPath = "./.tests/HCo/";
@@ -52,6 +50,10 @@ File testFile;
 		super.tearDown();
 	}
 	
+
+	/**
+	 * Tests HCo metric using its test file.
+	 */
 	public void testRCo() {
 		File projectDir = new File(testDirectoryPath);
 		

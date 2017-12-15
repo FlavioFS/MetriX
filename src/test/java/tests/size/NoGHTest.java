@@ -18,10 +18,8 @@ import util.SingleMetricFileHandler;
  */
 public class NoGHTest extends BaseTestManageFile {
 
-File testFile;
-	
 	/**
-	 * Creates test file.
+	 * Creates a test class for NoGH metric.
 	 */
 	protected void setUp() {
 		testDirectoryPath = "./.tests/NoGH/";
@@ -48,6 +46,9 @@ File testFile;
 		super.tearDown();
 	}
 	
+	/**
+	 * Tests NoGH metric using its test file.
+	 */
 	public void testRCo() {
 		File projectDir = new File(testDirectoryPath);
 		

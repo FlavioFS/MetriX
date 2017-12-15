@@ -18,10 +18,8 @@ import util.SingleMetricFileHandler;
  */
 public class RoCLoCTest extends BaseTestManageFile {
 
-	File testFile;
-	
 	/**
-	 * Creates test file.
+	 * Creates a test class for RoCLoC metric.
 	 */
 	protected void setUp() {
 		testDirectoryPath = "./.tests/RoCLoC/";
@@ -50,6 +48,9 @@ public class RoCLoCTest extends BaseTestManageFile {
 		super.tearDown();
 	}
 	
+	/**
+	 * Tests RoCLoC metric using its test file.
+	 */
 	public void testRoCLoC() {
 		File projectDir = new File(testDirectoryPath);
 		

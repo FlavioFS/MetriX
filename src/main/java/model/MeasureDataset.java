@@ -11,13 +11,19 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * A data structure to store Measures for each input class in an internal collection.
+ * A data structure to store a collection of Measures for each class in project.
  *
  */
 public class MeasureDataset {
 
+	/**
+	 * Output folder for CSV file.
+	 */
 	private final static String DATASET_PATH = "./data";
 
+	/**
+	 * The collection of measures from all classes in project.
+	 */
 	private static Map<String, MeasureSuite> dataset = new HashMap<>();
 
 	/**

@@ -18,10 +18,8 @@ import util.SingleMetricFileHandler;
  */
 public class NoSTest extends BaseTestManageFile {
 
-	File testFile;
-	
 	/**
-	 * Creates test file.
+	 * Creates a test class for NoS metric.
 	 */
 	protected void setUp() {
 		testDirectoryPath = "./.tests/NoS/";
@@ -51,6 +49,9 @@ public class NoSTest extends BaseTestManageFile {
 		super.tearDown();
 	}
 	
+	/**
+	 * Tests NoS metric using its test file.
+	 */
 	public void testNoS() {
 		File projectDir = new File(testDirectoryPath);
 		

@@ -13,10 +13,8 @@ import util.SingleMetricFileHandler;
 
 public class RoTLoCTest extends BaseTestManageFile {
 
-	File testFile;
-	
 	/**
-	 * Creates test file.
+	 * Creates a test class for RoTLoC metric.
 	 */
 	protected void setUp() {
 		testDirectoryPath = "./.tests/RoTLoC/";
@@ -43,6 +41,9 @@ public class RoTLoCTest extends BaseTestManageFile {
 		super.tearDown();
 	}
 	
+	/**
+	 * Tests RoTLoC metric using its test file.
+	 */
 	public void testRoTLoC() {
 		File projectDir = new File(testDirectoryPath);
 		

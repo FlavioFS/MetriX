@@ -1,3 +1,5 @@
+package main;
+
 import java.io.FileNotFoundException;
 
 import metrix.Metrix;
@@ -10,20 +12,16 @@ import metrix.Metrix;
 public class MainSampleArgs {
     
     public static void main(String[] args) {
-
-        if (args.length > 3)
-        	tryExtract(args[2], args[3]);
-
-        else if ( args.length == 3 && !args[1].equals("MainSampleArgs") )
-        	tryExtract(args[1], args[2]);
-
+    	
+        if (args.length == 2)
+        	tryExtract(args[0], args[1]);
         else
         	printInstructions();
 
     }
 
     static void printInstructions() {
-        System.out.println("MainSampleArgs argument error! Correct usage:");
+        System.out.println("MetriX: MainSampleArgs argument error! Correct usage:");
         System.out.println("$ java MainSampleArgs <inputPathFolder> <outputPathCSV>");
     }
 
@@ -34,10 +32,12 @@ public class MainSampleArgs {
      */
     static void tryExtract (String inputPathFolder, String outputPathCSV) {
         try {
+        	System.out.println("MetriX: extracting metrics...");
             Metrix.extract(inputPathFolder, outputPathCSV);
+            System.out.println("MetriX: Done!");
         } catch (FileNotFoundException e) {
             e.printStackTrace();
-            System.err.println("Error - Project not found at given path:");
+            System.err.println("MetriX: Error - Project not found at given path:");
             System.err.println(inputPathFolder);
         }
     }

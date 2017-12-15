@@ -11,8 +11,15 @@ import model.MeasureDataset;
  *
  */
 public class BaseTestClearDataAndManageDirectory extends TestCase {
-
+	
+	/**
+	 * The path to test directory that will be created during test exectuion.
+	 */
 	protected String testDirectoryPath = "./tests/";
+	
+	/**
+	 * The created test directory. It will be used by each metric test.
+	 */
 	protected File testDirectory;
 	
 	

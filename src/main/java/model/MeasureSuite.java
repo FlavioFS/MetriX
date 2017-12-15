@@ -9,8 +9,14 @@ import java.util.Vector;
  */
 public class MeasureSuite {
 
+	/**
+	 * Name of measured class. 
+	 */
 	private String className;
 
+	/**
+	 * The collection of metrics obtained from the class.
+	 */
 	private Collection<Measure> measures;
 
 	/**

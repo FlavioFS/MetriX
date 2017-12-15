@@ -1,5 +1,6 @@
 package tests.base;
 
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
@@ -11,9 +12,25 @@ import java.io.UnsupportedEncodingException;
  */
 public class BaseTestManageFile extends BaseTestClearDataAndManageDirectory {
 	
+	/**
+	 * The required test file that will be created.
+	 */
 	protected String testFilePath;
+	
+	/**
+	 * The source code of created test file.
+	 */
 	protected String testFileContent;
+	
+	/**
+	 * A PrintWriter to write source code into test file.
+	 */
 	protected PrintWriter testFilePrintWriter;
+	
+	/**
+	 * The actual test file edited and defined by each child test class.
+	 */
+	protected File testFile;
 	
 	/**
 	 * Creates and prints source to file.

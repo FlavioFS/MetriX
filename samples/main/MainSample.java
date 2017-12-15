@@ -1,3 +1,5 @@
+package main;
+
 import java.io.FileNotFoundException;
 
 import metrix.Metrix;
@@ -11,24 +13,22 @@ public class MainSample {
 
     public static void main(String[] args) {
     	
-    	System.out.println("Starting Metrix MainSample...");
-    	
         String projecPath = "./samples/HelloMetrix";
         String outputFileName = "./HelloMetrix";
 
         try {
-        	System.out.println("Running extractor...");
+        	System.out.println("MetriX: extracting metrics...");
             
         	// Calls MetriX
         	Metrix.extract(projecPath, outputFileName);
         	
+        	System.out.println("MetriX: Done! (check \".data/\" folder)");
         } catch (FileNotFoundException e) {
             e.printStackTrace();
-            System.err.println("Error - Project not found at given path:");
+            System.err.println("MetriX: Error - Project not found at given path:");
             System.err.println(projecPath);
         }
         
-        System.out.println("Done...");
         
     }
 

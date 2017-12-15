@@ -18,10 +18,8 @@ import util.SingleMetricFileHandler;
  */
 public class NoEHTest extends BaseTestManageFile {
 
-	File testFile;
-	
 	/**
-	 * Creates test file.
+	 * Creates a test class for NoEH metric.
 	 */
 	protected void setUp() {
 		testDirectoryPath = "./.tests/NoEH/";
@@ -49,6 +47,9 @@ public class NoEHTest extends BaseTestManageFile {
 		super.tearDown();
 	}
 	
+	/**
+	 * Tests NoEH metric using its test file.
+	 */
 	public void testRCo() {
 		File projectDir = new File(testDirectoryPath);
 		

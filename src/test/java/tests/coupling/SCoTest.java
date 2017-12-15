@@ -18,10 +18,8 @@ import util.SingleMetricFileHandler;
  */
 public class SCoTest extends BaseTestManageFile {
 
-	File testFile;
-	
 	/**
-	 * Creates test file.
+	 * Creates a test class for SCo metric.
 	 */
 	protected void setUp() {
 		testDirectoryPath = "./.tests/SCo/";
@@ -46,6 +44,9 @@ public class SCoTest extends BaseTestManageFile {
 		super.tearDown();
 	}
 	
+	/**
+	 * Tests SCo metric using its test file.
+	 */
 	public void testSCo() {
 		File projectDir = new File(testDirectoryPath);
 		

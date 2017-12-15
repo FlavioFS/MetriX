@@ -30,6 +30,11 @@ public class SingleMetricFileHandler implements FileHandler {
 	 * Default constructor.
 	 * @param projectDir Root directory as a File object.
 	 */
+	/**
+	 * Default constructor.
+	 * @param projectDir Root directory as a File object.
+	 * @param metric Aplly this metric only.
+	 */
 	public SingleMetricFileHandler (File projectDir, VoidVisitorAdapter<JavaParserFacade> metric) {
 		this.projectDir = projectDir;
 		this.metric = metric;

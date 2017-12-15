@@ -18,10 +18,8 @@ import util.SingleMetricFileHandler;
  */
 public class NoRTest extends BaseTestManageFile {
 
-	File testFile;
-	
 	/**
-	 * Creates test file.
+	 * Creates a test class for NoR metric.
 	 */
 	protected void setUp() {
 		testDirectoryPath = "./.tests/NoR/";
@@ -50,6 +48,9 @@ public class NoRTest extends BaseTestManageFile {
 		super.tearDown();
 	}
 	
+	/**
+	 * Tests NoR metric using its test file.
+	 */
 	public void testNoR() {
 		File projectDir = new File(testDirectoryPath);
 		

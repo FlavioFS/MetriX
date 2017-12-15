@@ -23,6 +23,10 @@ import tests.usage.EHMUTest;
  */
 public class AllMetricsTest {
 
+	/**
+	 * Creates the "all metrics suite" by the addition of each metric provided by Metrix.
+	 * @return A suite that runs every metric provided by Metrix.
+	 */
 	public static Test suite() {
 		TestSuite suite = new TestSuite(AllMetricsTest.class.getName());
 		

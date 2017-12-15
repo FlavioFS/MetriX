@@ -27,6 +27,9 @@
 ## :books: How to use
 Please refer to our [**:book: samples section**](https://github.com/FlavioFS/MetriX/tree/master/samples#metrix-samples) for some code snippets.
 
+## :wrench: Setup
+If you find any errors when importing this project into Eclipse, please refer to our [**:wrench: setup section**](https://github.com/FlavioFS/MetriX/tree/master/setup#metrix-setup) for possible solutions.
+
 ## :triangular_ruler: Metrics
 If the summary below is not enough, there is a detailed explanation in our [**:green_book: docs section**](https://github.com/FlavioFS/MetriX/tree/master/docs#metrix-docs).
 
