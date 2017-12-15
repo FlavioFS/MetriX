@@ -1,6 +1,6 @@
 import java.io.FileNotFoundException;
 
-import metrix.MetricSuiteExtractor;
+import metrix.Metrix;
 
 /**
  * A demo for how to invoke MetriX through console.
@@ -20,7 +20,7 @@ public class MainSample {
         	System.out.println("Running extractor...");
             
         	// Calls MetriX
-        	MetricSuiteExtractor.extract(projecPath, outputFileName);
+        	Metrix.extract(projecPath, outputFileName);
         	
         } catch (FileNotFoundException e) {
             e.printStackTrace();

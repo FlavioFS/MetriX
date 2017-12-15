@@ -1,6 +1,6 @@
 import java.io.FileNotFoundException;
 
-import metrix.MetricSuiteExtractor;
+import metrix.Metrix;
 
 /**
  * A demo for how to invoke MetriX through console (with args).
@@ -28,13 +28,13 @@ public class MainSampleArgs {
     }
 
     /**
-     * A "façade" that invokes MetriX and treats its exception (FileNotFoundException).
+     * A "facade" that invokes MetriX and treats its exception (FileNotFoundException).
      * @param inputPathFolder The project path (required by MetricSuiteExtractor).
 	 * @param outputPathCSV The CSV file to output calculated metrics (required by MetricSuiteExtractor).
      */
     static void tryExtract (String inputPathFolder, String outputPathCSV) {
         try {
-            MetricSuiteExtractor.extract(inputPathFolder, outputPathCSV);
+            Metrix.extract(inputPathFolder, outputPathCSV);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
             System.err.println("Error - Project not found at given path:");

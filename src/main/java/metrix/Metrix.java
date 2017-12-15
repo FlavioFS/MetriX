@@ -12,7 +12,7 @@ import util.JavaFilter;
  * Extracts ALL available metrics.
  *
  */
-public class MetricSuiteExtractor {
+public class Metrix {
 
 	/**
 	 * Applies all metrics to input project then outputs results to a CSV file.

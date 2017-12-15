@@ -8,7 +8,7 @@ public static void main(String[] args) {
 	String outputFileName = "./HelloMetrix";
 
 	try {
-		MetricSuiteExtractor.extract(projecPath, outputFileName);
+		Metrix.extract(projecPath, outputFileName);
 	} catch (FileNotFoundException e) {
 		e.printStackTrace();
 	}
