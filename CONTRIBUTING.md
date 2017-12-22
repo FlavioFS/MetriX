@@ -1,4 +1,4 @@
-# :raised_hands: How to Contribute
+# :triangular_flag_on_post: How to Contribute
 
 1. Fork this repo and run it successfully according to instructions in README.
 2. Before attempting to implement anything, send a request at the issues section.
