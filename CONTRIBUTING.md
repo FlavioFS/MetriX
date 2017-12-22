@@ -5,3 +5,5 @@
 3. Implement changes.
 4. Submit a pull request to us.
 5. Your request will be analyzed before a merge occurs.
+
+<h3 align="center"><a href="https://github.com/FlavioFS/MetriX/#metrix-home">:back:</a></div>
