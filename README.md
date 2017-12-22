@@ -25,13 +25,16 @@
 *MetriX* analyzes your Java code and outputs several code quality metrics (detailed below). Its goal is to facilitate quality assurance.
 
 ## :books: How to use
-Please refer to our [**:book: samples section**](https://github.com/FlavioFS/MetriX/tree/master/samples#metrix-samples) for some code snippets.
+Please refer to our [**:book: Samples section**](https://github.com/FlavioFS/MetriX/tree/master/samples#metrix-samples) for some code snippets.
 
 ## :wrench: Setup
-If you find any errors when importing this project into Eclipse, please refer to our [**:wrench: setup section**](https://github.com/FlavioFS/MetriX/tree/master/setup#metrix-setup) for possible solutions.
+If you find any errors when importing this project into Eclipse, please refer to our [**:wrench: Setup section**](https://github.com/FlavioFS/MetriX/tree/master/setup#metrix-setup) for possible solutions.
+
+## :triangular_flag_on_post: Contributing
+Do you want to help improving this project? Check our [**:triangular_flag_on_post: Contribution section**](CONTRIBUTING.md).
 
 ## :triangular_ruler: Metrics
-If the summary below is not enough, there is a detailed explanation in our [**:green_book: docs section**](https://github.com/FlavioFS/MetriX/tree/master/docs#metrix-docs).
+If the summary below is not enough, there is a detailed explanation in our [**:green_book: Docs section**](https://github.com/FlavioFS/MetriX/tree/master/docs#metrix-docs).
 
 ### Coupling Metrics 
 | Acronym  | Metric        | Description |
